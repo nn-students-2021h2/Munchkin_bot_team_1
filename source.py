@@ -11,8 +11,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
 
 if BOT_TOKEN is None:
     sys.exit(
-        "There is no BOT_TOKEN in .env file or .env file does not exist.\n"
-        "Exiting..."
+        "There is no BOT_TOKEN in .env file or .env file does not exist.\n" "Exiting..."
     )
 
 BASE_URL = f"https://api.telegram.org/bot{BOT_TOKEN}/"
