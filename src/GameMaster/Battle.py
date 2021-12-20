@@ -7,4 +7,3 @@ class Battle(Turn):
     def __inti__(sefl):
         super.__init__()
         ...
-
