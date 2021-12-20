@@ -56,4 +56,3 @@ class GameMaster:
     def _turn(self):
         taken_card = self._take_dungeon_card()
         Turn.Turn()  # create Turn instance to manipulate game during turn stage
-
