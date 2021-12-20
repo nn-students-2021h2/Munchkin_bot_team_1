@@ -7,7 +7,7 @@ class Player:
 
 class GameMaster:
 
-    """ Class to control game procces """
+    """Class to control game procces"""
 
     def __init__(self, number_of_players):
 
