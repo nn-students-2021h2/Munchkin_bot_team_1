@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass, field
 from enum import Enum, auto
-from typing import Any, List
+from typing import Any, List, Optional
 
 
 class Race(Enum):
@@ -31,6 +31,16 @@ class Sex(Enum):
 
 
 @dataclass
+class Stats:
+    """Store player stats"""
+
+    level: int = 1
+    power: int = 1
+    race: Race = Race.HUMAN
+    class_type: Optional[ClassType] = None
+
+
+@dataclass
 class Equipment:
     """
     Represent players equipment
@@ -38,6 +48,7 @@ class Equipment:
     Weapons list must contain one two-handed weapon or two one-handed one
     """
 
+    # TODO all theese fields should be Item class or None
     headgear: Any = None
     armor: Any = None
     footgear: Any = None
@@ -48,18 +59,33 @@ class Player:
     """Store all player's stats and cards"""
 
     def __init__(self, name: str, sex: Sex) -> None:
+        """
+        Create new player with passed name and sex
+        """
+
+        # TODO Make valid annotations
         self.cards_in_hand: List[Any] = []
         self.cards_on_table: List[Any] = []
         self.equipment = Equipment()
         self.escape_bonus = 0
-        self.level = 1
         self.max_big_items = 1
         self.max_cards_in_hand = 5
         self.name = name
-        self.power = 0
-        self.race = Race.HUMAN
         self.sex = sex
+        self.stats = Stats()
 
-    def calculate_power(self) -> int:
-        """Calculate player's power based on item cards"""
+    def _calculate_power(self) -> None:
+        """
+        Calculate and set player's power based on item cards change
+        """
+
+        ...
+
+    # TODO Rename make_curse -> apply_curse
+    # TODO Make valid annotation
+    def make_curse(self, curse: Any) -> None:
+        """
+        Depending on the passed curse change player stats
+        """
+
         ...
