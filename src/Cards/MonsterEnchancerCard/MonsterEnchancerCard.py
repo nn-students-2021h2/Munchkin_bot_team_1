@@ -1,7 +1,9 @@
 import sys
-sys.path.append('../BaseCard')
+
+sys.path.append("../BaseCard")
 
 from BaseCard import BaseCard
+
 
 class MonsterEnchancerCard(BaseCard):
     def __init__(self, name, description, deck_type, play_time, ability):
@@ -9,5 +11,5 @@ class MonsterEnchancerCard(BaseCard):
         self.ability = ability
 
     def enchance(self, monster):
-        #do something with monster
+        # do something with monster
         pass
