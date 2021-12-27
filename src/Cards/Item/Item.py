@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../BaseCard')
+
 from BaseCard import BaseCard
 
 class Item(BaseCard):
