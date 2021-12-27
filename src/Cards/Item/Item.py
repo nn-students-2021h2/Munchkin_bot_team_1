@@ -1,7 +1,7 @@
+from BaseCard import BaseCard
 import sys
 sys.path.append('../BaseCard')
 
-from BaseCard import BaseCard
 
 class Item(BaseCard):
     def __init__(self, name, description, deck_type, play_time, cost, ability, type, bonus, two_hand, big, who_can_use, disposable):
