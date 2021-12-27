@@ -1,10 +1,13 @@
 from BaseCard import BaseCard
 import sys
-sys.path.append('../BaseCard')
+
+sys.path.append("../BaseCard")
 
 
 class MonsterCard(BaseCard):
-    def __init__(self, name, description, deck_type, play_time, level, ability, action, treasures):
+    def __init__(
+        self, name, description, deck_type, play_time, level, ability, action, treasures
+    ):
         super().__init__(name, description, deck_type, play_time)
         self.level = level
         self.ability = ability
