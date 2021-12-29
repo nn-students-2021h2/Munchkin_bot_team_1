@@ -1,4 +1,4 @@
-from src.Cards.BaseCard import BaseCard
+from src.cards.base_card import BaseCard
 
 
 class CurseCard(BaseCard):
