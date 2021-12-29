@@ -1,4 +1,4 @@
-import Turn
+from src.game_master.turn import Turn
 
 
 class Player:
