@@ -13,4 +13,4 @@ class MonsterEnchancerCard(BaseCard):
 
     def enchance(self, monster: MonsterCard):
         # do something with monster
-        pass
+        ...

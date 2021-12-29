@@ -23,4 +23,4 @@ class MonsterCard(BaseCard):
 
     def _action(self, player: Any):
         # do something with player
-        pass
+        ...

@@ -17,4 +17,4 @@ class CurseCard(BaseCard):
 
     def curse(self, player: Any):
         # do something with player
-        pass
+        ...
