@@ -4,7 +4,7 @@ from src.cards.base_card import BaseCard
 from src.cards.monster_card import MonsterCard
 
 
-class MonsterEnchancerCard(BaseCard):
+class MonsterEnhancerCard(BaseCard):
     def __init__(
         self, name: str, description: str, deck_type: Any, play_time: Any, ability: Any
     ):
