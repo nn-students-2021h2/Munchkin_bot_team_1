@@ -10,10 +10,10 @@ class CurseCard(BaseCard):
         description: str,
         deck_type: Any,
         play_time: Any,
-        instant_curse: bool,
+        is_instant_curse: bool,
     ):
         super().__init__(name, description, deck_type, play_time)
-        self.instant_curse = instant_curse
+        self.is_instant_curse = is_instant_curse
 
     def curse(self, player: Any):
         # do something with player
