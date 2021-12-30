@@ -10,19 +10,19 @@ class Item(BaseCard):
         play_time,
         cost,
         ability,
-        type,
+        gear_type,
         bonus,
-        two_hand,
-        big,
+        is_two_hand,
+        is_big,
         who_can_use,
-        disposable,
+        is_disposable,
     ):
         super().__init__(name, description, deck_type, play_time)
         self.cost = cost
         self.ability = ability
-        self.type = type
+        self.gear_type = gear_type
         self.bonus = bonus
-        self.two_hand = two_hand
-        self.big = big
+        self.is_two_hand = is_two_hand
+        self.is_big = is_big
         self.who_can_use = who_can_use
-        self.disposable = disposable
+        self.is_disposable = is_disposable
