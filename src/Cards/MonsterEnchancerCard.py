@@ -1,8 +1,4 @@
-import sys
-
-sys.path.append("../BaseCard")
-
-from BaseCard import BaseCard
+from src.Cards.BaseCard import BaseCard
 
 
 class MonsterEnchancerCard(BaseCard):
