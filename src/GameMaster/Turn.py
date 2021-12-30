@@ -14,7 +14,7 @@ class Turn:
     def turn(self):
         if self._taken_card.type == "monster":
             # init Fight class
-            Battle()
+            battle = Battle(..., ...)
         elif self._taken_card.type == "curse":
             # apply a curse on the current player
             self._player.make_curse()  # method in Players class

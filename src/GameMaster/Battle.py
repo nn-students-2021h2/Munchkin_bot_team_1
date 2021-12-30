@@ -4,5 +4,5 @@ from src.GameMaster.Turn import Turn
 
 
 class Battle(Turn):
-    def __inti__(sefl):
-        super.__init__()
+    def __init__(self, player, taken_card):
+        super().__init__(player, taken_card)
