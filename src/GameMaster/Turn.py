@@ -1,10 +1,12 @@
+from typing import Any
+
 from src.GameMaster.Battle import Battle
 
 
 class Turn:
     """A class that describes the behavior of the game during combat"""
 
-    def __init__(self, player, taken_card):
+    def __init__(self, player: Any, taken_card: Any):
         self._player = player
         self._taken_card = taken_card
 

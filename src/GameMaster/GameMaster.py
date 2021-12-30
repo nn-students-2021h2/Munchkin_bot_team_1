@@ -6,7 +6,7 @@ class Player:
 
 
 class GameMaster:
-    def __init__(self, number_of_players):
+    def __init__(self, number_of_players: int):
         """Class to control game proccess"""
 
         # Create default list of players
@@ -21,7 +21,7 @@ class GameMaster:
 
         pass
 
-    def get_players(self, name=None):
+    def get_players(self, name: str = None):
         """Return List of Players or player with selected name"""
 
         if id is None:
