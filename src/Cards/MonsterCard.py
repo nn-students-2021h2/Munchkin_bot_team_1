@@ -1,9 +1,19 @@
+from typing import Any
+
 from src.Cards.BaseCard import BaseCard
 
 
 class MonsterCard(BaseCard):
     def __init__(
-        self, name, description, deck_type, play_time, level, ability, action, treasures
+        self,
+        name: str,
+        description: str,
+        deck_type: Any,
+        play_time: Any,
+        level: int,
+        ability: Any,
+        action: Any,
+        treasures: int,
     ):
         super().__init__(name, description, deck_type, play_time)
         self.level = level
@@ -11,6 +21,6 @@ class MonsterCard(BaseCard):
         self.action = action
         self.treasures = treasures
 
-    def _action(self, player):
+    def _action(self, player: Any):
         # do something with player
         pass
