@@ -7,18 +7,18 @@ class Player:
 
 class GameMaster:
 
-    """Class to control game procces"""
+    """Class to control game proccess"""
 
     def __init__(self, number_of_players):
 
         # Create default list of players
         self._players = [Player() for _ in range(number_of_players)]
 
-        # Create dungeon and treasure card deck with random shaffle
+        # Create dungeon and treasure card deck with random shuffle
         self._dungeon_cards_deck = []  # List of dicts
         self._treasure_cards_deck = []  # List of dicts
 
-        # Varivble to track whose turn is now
+        # Variable to track whose turn is now
         self._whose_turn = 0
 
         pass

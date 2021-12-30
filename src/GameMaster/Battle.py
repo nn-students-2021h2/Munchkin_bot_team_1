@@ -1,6 +1,6 @@
 from src.GameMaster.Turn import Turn
 
-"""Represet battle gme battle stage"""
+"""Represent battle stage of the game"""
 
 
 class Battle(Turn):
