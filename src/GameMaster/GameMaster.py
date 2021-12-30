@@ -1,4 +1,4 @@
-import Turn
+from src.GameMaster.Turn import Turn
 
 
 class Player:

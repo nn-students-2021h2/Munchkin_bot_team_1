@@ -1,4 +1,4 @@
-from Battle import Battle
+from src.GameMaster.Battle import Battle
 
 """ 
 A class that describes the behavior of the game during combat
